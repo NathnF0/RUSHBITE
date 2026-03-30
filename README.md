@@ -1,54 +1,80 @@
-RushBite 🍔🍕🍣
+# 🍔 RushBite – Food Ordering System 🍕🍣
 
-Welcome to RushBite, a complete ordering system connecting customers with businesses, simulating a real delivery experience. This is my main project, built in Python, focused on programming logic, JSON data handling, interactive menus, and shop/product management.
+RushBite is a **terminal-based food ordering system** connecting customers with businesses, simulating a real delivery experience. Built in Python with **JSON-based data storage**, interactive menus, and easy-to-manage business functionalities.
 
-🎯 Features
-Customer Mode
-Browse food categories (Burger, Pizza, Japanese, etc.)
-View all published businesses
-See business description, category, and opening hours
-Check if the store is Open or Closed based on the schedule
-Select products from the menu, add them to the cart, and see the order summary with subtotals
-Business Mode
-Create a new store with name and password
-Secure login to manage your business
-Add products with prices
-View registered products
-Customize your store:
-Category
-Description
-Opening hours
-Publish the store on RushBite so customers can see it
-Interactive menu with explanations for each function
-⚙️ Technologies Used
-Python 3.11+
-JSON for data persistence
-Terminal-based interactive menu
-📝 How to Use
-Clone this repository:
-git clone https://github.com/NathnF0/SISTEMofORDERS-RUSHBITE-.git
-Navigate to the project folder:
-cd SISTEMofORDERS-RUSHBITE-
-Run the script:
-python app.py
-Choose between Customer Mode or Business Mode and follow the interactive instructions.
-💡 Notes
-A business must publish their store to appear in Customer Mode.
-Stores display Open or Closed based on their set opening hours.
-All information is saved in empresas.json.
-📌 Project Structure
+---
+
+## 🌟 Features
+
+### 🛒 Customer Mode
+- Browse food categories: Burger, Pizza, Japanese, etc.
+- View all published businesses with:
+  - Name
+  - Description
+  - Opening hours (Open / Closed status based on current time)
+- Select products from the menu and add to cart
+- View order summary with **itemized prices and total**
+
+### 🏪 Business Mode
+- Create a store with **name & password**
+- Secure login to manage your business
+- Add or remove products
+- Customize your store:
+  - Category
+  - Description
+  - Opening hours
+- Publish the store to RushBite so customers can see it
+- Interactive menus with **tips & explanations** for each option
+
+---
+
+## ⚙️ Technologies
+- Python 3.11+
+- JSON for data persistence
+- Terminal-based menus for interaction
+
+---
+
+## 📂 Project Structure
+
+
 SISTEMofORDERS-RUSHBITE-/
 │
-├─ app.py             # Main RushBite code
-├─ empresas.json      # Stores and products data
-└─ README.md          # This file
-🌟 Future Ideas
-Add product search or category filters
-Include images or icons for stores and products
-Create a GUI using Tkinter or PyQt
-Customer login to save frequent orders
+├─ app.py # Main RushBite code
+├─ empresas.json # Store & product data
+└─ README.md # Project documentation
+
+
+---
+
+## 🚀 Getting Started
+
+1.**Clone the repository:**
+git clone https://github.com/NathnF0/SISTEMofORDERS-RUSHBITE-.git
+
+2.Navigate to the project folder:
+cd SISTEMofORDERS-RUSHBITE-
+
+3.Run the application:
+python app.py
+
+4.Follow the interactive instructions and choose between Customer Mode or Business Mode.
+
+📝 Notes
+
+A store must be published to appear in Customer Mode.
+Store hours are used to display Open/Closed status.
+All business data is saved in empresas.json.
+
+💡 Future Improvements
+
+Search & filter products by category
+Add images/icons for stores and products
+Build a GUI with Tkinter or PyQt
+Customer accounts for saving frequent orders
 Multi-store cart system
-Product and store rating system
+Product & store rating system
+
 👨‍💻 Author
 
 NathnF
