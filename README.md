@@ -46,7 +46,10 @@ Agora a distância entre a fome e a comida diminuiu!
 ## 🚀 Como Executar
 1. Clone o repositório:
    ```bash
-   git clone [https://github.com/NathnF0/SISTEMofORDERS-RUSHBITE-.git](https://github.com/NathnF0/SISTEMofORDERS-RUSHBITE-.git)
-Entre na pasta:Bashcd "SISTEMofORDERS-RUSHBITE-"
+   git clone [https://github.com/NathnF0/RUSHBITE.git](https://github.com/NathnF0/RUSHBITE.git)
+Entre na pasta:Bashcd "RUSHBITE"
 Execute o app:Bashpython main.py
-📸 Demonstração das FuncionalidadesFuncionalidadeDescriçãoPainel de OperaçõesGestão de cardápio, estoque e preços em tempo real.Checkout DinâmicoCálculo de taxas de entrega, cupons de desconto e escolha de modalidade.Dashboard FinanceiroVisualização de faturamento líquido e ticket médio da loja.Chat de PedidoHistórico completo de mensagens entre as duas pontas.👨‍💻 DesenvolvedorDesenvolvido com Python por Nathn.
+
+📸 Demonstração das FuncionalidadesFuncionalidadeDescriçãoPainel de OperaçõesGestão de cardápio, estoque e preços em tempo real.Checkout DinâmicoCálculo de taxas de entrega, cupons de desconto e escolha de modalidade.Dashboard FinanceiroVisualização de faturamento líquido e ticket médio da loja.Chat de PedidoHistórico completo de mensagens entre as duas pontas.
+
+👨‍💻 DesenvolvedorDesenvolvido com Python por Nathn.
