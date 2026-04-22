@@ -1,88 +1,88 @@
-# 🍔 RushBite Delivery System
+# 🍔 RushBite: The Terminal Delivery Engine (v0.3.0 Stable)
 
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)
-![Version](https://img.shields.io/badge/version-0.2.8--beta-orange?style=for-the-badge)
+> **A "zero-crash" NoSQL Delivery ecosystem built for performance and reliability.**
 
-O **RushBite** é uma solução completa de PDV (Ponto de Venda) e Delivery operando inteiramente via terminal. Projetado para oferecer uma experiência fluida tanto para o cliente faminto quanto para o empreendedor que busca gerir seu negócio com precisão técnica.
+O **RushBite** é um ecossistema de PDV (Ponto de Venda) e Delivery de alta performance que opera inteiramente via terminal. Mais do que um script, é uma solução de engenharia modular projetada para escalabilidade, com tratamento de exceções rigoroso e uma experiência de usuário (UX) inspirada em interfaces modernas.
 
 ---
 
-## 📸 Demonstração
+## 💎 O que há de novo na v0.3.0 (The Shield Update)
 
-> [!TIP]
-<img width="245" height="216" alt="MenuPrincpal-Github-RB" src="https://github.com/user-attachments/assets/8091e387-6985-4b0e-8a08-e460a27bee49" />
+Esta versão marca a transição do projeto para o estado **Production Ready**. 
+- **🛡️ Data Shielding:** Implementação de tratamento de tipos e buscas seguras (`.get()`) em todo o núcleo, eliminando `KeyErrors`.
+- **🔄 State Sync:** Sincronização em tempo real entre memória do sistema e persistência JSON.
+- **🎟️ Rush Loyalty 2.0:** Loja de cupons integrada com travas de nível (Bronze, Prata, Ouro) e validação de saldo de XP.
+- **📍 Structured Logistics:** Motor de endereçamento que suporta objetos geográficos complexos.
 
 ---
 
 ## 🔥 Funcionalidades de Elite
 
-### 👤 Módulo do Cliente
-- **🛒 Shopping Inteligente:** Cardápio dinâmico que esconde automaticamente itens sem estoque.
-- **🔁 Reorder (One-Click):** Histórico inteligente para repetir o último pedido em segundos.
-- **⭐ Fidelidade Rush:** Sistema de pontos acumulativos com barra de progresso visual.
-- **📍 Logística Estruturada:** Cadastro de endereço detalhado (Rua, Nº, Bairro, CEP e Referência).
-- **🎟️ Central de Promoções:** Vitrine exclusiva para cupons de lojas e parcerias globais.
+### 👤 Jornada do Cliente (Customer Experience)
+* **🛒 Smart Shopping:** Cardápio dinâmico com auto-hide de itens sem estoque.
+* **⭐ Rush Loyalty System:** Barra de progresso visual e evolução de nível baseada em gamificação.
+* **🎟️ Coupon Marketplace:** Resgate de descontos via XP com geração de códigos criptográficos únicos.
+* **📦 Order Tracking:** Histórico de pedidos com filtragem inteligente por status.
 
-### 🏢 Módulo da Empresa (BI & Management)
-- **📈 Dashboard de Performance:** Ranking de produtos mais vendidos e histórico de melhores clientes.
-- **💰 Gestão Financeira:** Controle de faturamento bruto e estimativa de lucro líquido.
-- **🤝 Contrato RushPartner:** Adesão digital a campanhas de marketing da plataforma.
-- **📦 Inventário em Tempo Real:** Ajuste de estoque simples com suporte a itens ilimitados (∞).
-- **🔔 Gestão de Pedidos:** Fila de produção com alteração de status e chat integrado.
+### 🏢 Gestão Empresarial (Business Intelligence)
+* **📈 Dashboard Analytics:** Ranking de produtos e KPIs de faturamento bruto/líquido.
+* **📦 Stock Master:** Inventário dinâmico com suporte a itens ilimitados.
+* **🔔 Live Queue:** Fila de produção em tempo real com alteração de status via terminal.
 
 ---
 
-## 🛠️ Arquitetura do Projeto
+## 🏗️ Arquitetura do Sistema
 
-O sistema utiliza uma arquitetura modular para facilitar a manutenção e escalabilidade:
+O projeto segue o padrão **Modular Monolith**, garantindo que a lógica de interface (View) esteja separada do motor de persistência (Data).
 
 ```text
 rushbite/
-├── main.py              # Ponto de entrada e sistema de Login/Cadastro
+├── main.py              # Bootstrap & Auth System (Identity Provider)
 ├── src/
-│   ├── database.py      # Motor de persistência (JSON NoSQL)
-│   ├── utils.py         # UI/UX, cores ANSI e helpers
+│   ├── database.py      # NoSQL Engine (JSON Persistence Layer)
+│   ├── utils.py         # UI/UX Core, ANSI Engine & Helpers
 │   └── telas/
-│       ├── cliente.py   # Lógica da jornada do comprador
-│       └── empresa.py   # Lógica do painel administrativo
-└── data/                # Armazenamento dos arquivos .json
-🚀 Instalação e Uso
-Clone o repositório:
+│       ├── cliente.py   # Customer Journey & Gamification Logic
+│       └── empresa.py   # Admin Panel & BI Dashboards
+└── data/                # Database Storage (.json files)
+🚀 Deployment Rápido
+Clone o Motor:
 
 Bash
-git clone [https://github.com/NathnF0/RUSHBITE.git]
-Entre no diretório:
+git clone [https://github.com/NathnF0/RUSHBITE.git](https://github.com/NathnF0/RUSHBITE.git)
+Setup:
 
 Bash
 cd rushbite
-Inicie o sistema:
+Ignite:
 
 Bash
 python main.py
-📝 Roadmap de Desenvolvimento
-[x] v0.2.5: Sistema de Chat e Notificações.
+📈 Roadmap de Evolução
+[x] v0.2.8 - BI, Fidelidade e Endereço Estruturado.
 
-[x] v0.2.8: BI, Fidelidade e Endereço Estruturado.
+[x] v0.3.0 - Refatoração Crítica: Estabilidade, Sincronização de Dados e Loja de Cupons.
 
-[ ] v0.3.0: Integração com Gateway de Pagamento (Simulado).
+[ ] v0.3.5 — UX & Analytics: Sistema de Avaliações (Stars), Comentários nos Pedidos e Gráficos de Venda via Matplotlib/Terminal.
 
-[ ] v0.3.5: Suporte a múltiplos entregadores e rastreio.
+[ ] v0.4.0 - Sistema Multiusuário com Rastreamento de Entregadores.
 
-🤝 Contribuição
-Contribuições são o que fazem a comunidade open source um lugar incrível para aprender, inspirar e criar.
+[ ] v0.5.0 — Global Scale: Suporte a Multi-lojas e API de Integração Externa.
+
+🤝 Contribuição e Engenharia
+Contribuições que visam otimizar o consumo de memória ou melhorar o motor de busca NoSQL são bem-vindas.
 
 Faça um Fork do projeto.
 
-Crie uma Branch para sua feature (git checkout -b feature/AmazingFeature).
+Crie uma Branch (git checkout -b feature/AmazingFeature).
 
-Dê um Commit nas suas alterações (git commit -m 'Add some AmazingFeature').
+Dê o Commit (git commit -m 'Add some AmazingFeature').
 
-Faça um Push para a Branch (git push origin feature/AmazingFeature).
+Push (git push origin feature/AmazingFeature).
 
 Abra um Pull Request.
 
 📜 Licença
-Distribuído sob a licença MIT. Veja LICENSE para mais informações.
+Distribuído sob a licença MIT.
 
-Desenvolvido com ☕ e 🐍 por Nathn
+Desenvolvido com ☕, 🐍 e muita persistência por Nathn.
